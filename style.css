@@ -1,0 +1,286 @@
+body,
+div,
+nav,
+img,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Georgia", serif;
+}
+
+/********************* HEADER *****************/
+
+.menu-bg {
+  background-color: #222;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a{
+  display: block;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+.nav-bar li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.nav-bar a {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+/********************* INTRODUÇÃO *****************/
+
+.intro-bg {
+  background: url(img/bg-intro.jpg) no-repeat center center;
+  background-size: cover;
+}
+.intro-texto {
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+}
+.intro-texto h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  
+}
+.intro-texto h1:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+}
+.intro-texto p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/********************* AMOR E PERFEIÇÃO *****************/
+
+.mistura {
+  padding: 60px 0;
+}
+.mistura h2 {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 2.25rem;
+}
+.mistura-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.mistura-item h3 {
+  background-color: #222;
+  color: #fff;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 10px 40px;
+  position: relative;
+  top: -25px;
+  font-weight: normal;
+  font-style: italic;
+}
+.contem {
+  margin: 20px auto;
+  max-width: 460px;
+}
+.contem p{
+  font-size: 1.25rem;
+  line-height: 1.4em;
+  text-align: center;
+  font-style: italic;
+}
+
+/********************* TIPOS DE CAFÉ *****************/
+
+.tipos-bg {
+  background-color: #e7e4d8;
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+
+}
+.tipos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 80px 0 80px;
+  gap: 40px;
+  
+}
+
+.tipos-item h3 {
+  font-size: 2rem;
+  margin: 20px;
+  position: relative;
+}
+.tipos-item h3:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 5px inset bisque, 0 0 0 5px #222;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.paulista h3:before{
+  background-color: #492901;
+  box-shadow: 0 0 0 5px inset bisque, 0 0 0 5px #492901;
+}
+.carioca h3:before{
+  background-color: #c17139;
+  box-shadow: 0 0 0 5px inset bisque, 0 0 0 5px #c17139;
+
+}
+.mineiro h3:before{
+  background-color: #d7a54d;
+  box-shadow: 0 0 0 5px inset bisque, 0 0 0 5px #d7a54d;
+
+}
+.botao {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #222;
+  border: 3px solid #222;
+  padding: 10px 20px;
+  display: inline-block;
+  grid-column: 2;
+  
+}
+
+/************* LOJAS ********************/
+
+.lojas {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.loja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.loja-texto {
+  max-width: 300px;
+}
+.loja-texto h3 {
+  font-size: 2rem;
+}
+.loja-texto p {
+  margin: 20px 0;
+}
+
+.loja:first-child,
+.loja:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+
+/******************** FORM ***************************/
+.news-bg{
+  background-color: #e7e4d8;
+  padding: 30px 0;
+}
+.news{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.news h2{
+  font-size: 2.25em;
+}
+
+.news p{
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+form {
+  width: 460px;
+  margin: 0 10px;
+
+}
+form label {
+  font-size: 2rem;
+  display: none;
+}
+.news input{
+  width: 288px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  padding: 10px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.news button{
+  background-color: #252525;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  width: 140px;
+  padding: 13px 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.footer{
+  background-color: #d6d3c8;
+  padding: 40px 0;
+
+}
+.footer::after, .footer::before{
+  content: '';
+  display: table;
+  clear: both;
+}
+.footer p{
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+.footer img{
+  float: right;
+  margin: 0 10px;
+  display: block;
+}
