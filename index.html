@@ -7,14 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brafé</title>
   <link rel="stylesheet" href="./style.css">
+  <script>document.documentElement.className += ' js'</script>
 </head>
 
 <body>
   <header class="menu-bg">
     <div class="menu container">
-      <a href=""><img src="./img/brafe.png" alt="Brafé"></a>
-      <nav class="nav-bar">
-        <ul>
+      <a class="logo" href=""><img src="./img/brafe.png" alt="Brafé"></a>
+      <nav class="nav-bar" data-menu="suave">
+        <button class="btn-menu" data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+        <ul data-menu="list" id="menu">
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Produtos</a></li>
           <li><a href="#">Portfólio</a></li>
@@ -62,9 +64,8 @@
         <h3>Mineiro</h3>
         <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
       </div>
-      <a href="#" class="botao">Saiba mais</a>
-
     </div>
+    <a href="#" class="botao">Saiba mais</a>
   </section>
   <section class="lojas container">
 
@@ -111,8 +112,8 @@
   </section>
 
 
-  <footer class="footer">
-    <div class="container">
+  <footer class="footer-bg">
+    <div class="footer container">
       <p>Este é um projeto da Origamid. Mais em origamid.com<br>Praia de Botafogo, 300, 5º andar - Botafogo - Rio de Janeiro.</p>
       <img src="./img/brafe.png" alt="Brafé">
     </div>
